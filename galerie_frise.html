@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site projet FEMI-MUTILATE">
+
+    <title>FEMI-MUTILATE</title>
+
+    <link rel="stylesheet" href="/src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <!-- Entête -->
+    <header x-data="{ open: false }">
+        <img src="/public/img/logo.png"> 
+
+        <span>Femi-mutilate</span>
+
+        <button class="open_navigation" x-on:click="open = !open" :class="{ 'active': open }">
+            <span></span>
+        </button>
+    
+        <!-- Menu -->
+        <nav :class="{ 'active': open }">
+            <ul>
+                <li>
+                    <h1>L’excision</h1>
+                </li>
+                <li>
+                    <h1>Waris Dirie</h1>
+                </li>
+                <li>
+                    <h1>Fleur du désert</h1>
+                </li>
+                <li>
+                    <h1>Autres projets</h1>
+                </li>
+                <li>
+                    <h1>Galerie / Frise</h1>
+                </li>
+                <li>
+                    <h1>Glossaire</h1>
+                </li>
+                <li>
+                    <h1>Contact</h1>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Galerie_Frise</h1>
+        frise 
+        <article x-data="{ art: false }">
+        <h2>Simone veil </h2>
+        <img src="public/img/galerie/Simone Veil.jpg" alt="Simone veil">
+        <img  x-on:click="art = !open"  src="public/icons/Fleche vers le bas.svg" alt="Fleche vers le bas">
+        <p :class="{ 'active': art }">Simone Veil née le 13 juillet 1927 et morte le 30 juin 2017. 
+            C'est une magistrate et une femme d’État française.
+            Après des études de droit et de science politique, elle entre dans la magistrature comme haut fonctionnaire.
+
+            En 1974, elle devient ministre de la Santé. 
+            Elle fait adopter la loi dépénalisant le recours à l'interruption volontaire de grossesse (IVG), loi appelée ensuite
+            « loi Veil ». ></p>
+        
+        </article>  
+    </main>   
+</body>
+</html>

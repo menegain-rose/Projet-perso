@@ -1,0 +1,195 @@
+main {
+    padding: 0 25px;
+    padding-top: 40px;
+}
+
+/**
+ * Introduction
+ */
+#intro {
+    text-align: center;
+    color: var(--text);
+    font-family: var(--font-sans-serif);
+    padding: 10px 0;
+    margin-bottom: 40px;
+    border-top: 1px solid var(--block);
+    border-bottom: 1px solid var(--block);
+}
+
+#intro p {
+    margin: 0;
+}
+
+#intro .actions {
+    padding-top: 15px;
+}
+
+#intro .actions .btn {
+    margin-left: 15px;
+}
+
+/**
+ * Articles
+ */
+#articles article {
+    background-color: var(--block);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+#articles article .image {
+    position: relative;
+}
+
+#articles article .content {
+    margin: 10px;
+}
+
+#articles article .content > h2 {
+    color : var(--text);
+    font-family: var(--small_title);
+    font-size: var(--title-lg)
+}
+
+#articles article .content > p {
+    color: var(--text);
+    font-family: var(--text);
+}
+
+.textes-à-part {
+    color: var(--text);
+    font-family: var(--text);
+}
+
+/**
+ * Bouton
+ */
+.btn {
+    background-color: var(--block);
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px var(--secondary);
+    color: var(--text);
+    padding: 5px 10px;
+}
+
+.fab {
+    background-color: var(--secondary);
+    color: var(--text);
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(60%);
+}
+
+.btn-envoyer {
+    background-color: var(--block);
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px var(--secondary);
+    color: var(--text);
+    padding: 5px 10px;
+}
+
+.glsr {
+    border-radius: 5px;
+    background-color: var(--block);
+    border-color: var(--block);
+    box-shadow: 0px 3px 3px var(--secondary);
+    font-family: var(--font-mono); /* appliquer une police */
+    font-size: var(--title-xl);
+    color: var(--text);
+    padding: 7px 102px;
+}
+
+main > h1 {
+    color: var(--title_page);
+    font-family: var(--font-mono); /* appliquer une police */
+    font-size: var(--title-xl);
+}
+
+main > h2 {
+    color: var(--small_title);
+    font-family: var(--font-sans-serif); /* appliquer une police */
+    font-size: var(--title-lg);
+}
+
+main > div > h2 {
+    color: var(--small_title);
+    font-family: var(--font-sans-serif); /* appliquer une police */
+    font-size: var(--title-lg);
+    padding-top: 50px;
+}
+
+main > div > p {
+    color: var(--text);
+    font-family: var(--font-sans-serif); 
+}
+
+main > div > form > label {
+    color: var(--text);
+    font-family: var(--font-sans-serif);
+}
+
+main > p {
+    color: var(--text);
+    font-family: var(--font-sans-serif); 
+    height: 200px
+}
+
+main > dl > dt {
+    color: var(--small_title);
+    font-family: var(--font-sans-serif); /* appliquer une police */
+    font-size: var(--title-lg);
+    padding-top: 20px;
+}
+
+main > dl > dd {
+    color: var(--text);
+    font-family: var(--text);
+}
+
+
+.button2 {
+    position: relative;
+    background-color: var(--block);
+    border-radius: 5px;
+    border-color: var(--block);
+    box-shadow: 0px 3px 3px var(--secondary);
+    color: var(--text);
+}
+
+.content > h2 {
+    color : var(--text);
+    font-family: var(--small_title);
+    font-size: var(--title-lg)
+}
+
+.content > p {
+    color: var(--text);
+    font-family: var(--text);
+}
+
+.number-help {
+    color : var(--rose);
+    font-family: var(--small_title);
+    font-size: var(--title-xl);
+    text-align: center;
+}
+
+.personal-contact {
+    background-color: var(--block);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+

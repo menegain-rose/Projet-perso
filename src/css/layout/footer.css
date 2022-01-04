@@ -1,0 +1,46 @@
+footer {
+    position: relative;
+    background-color: var(--secondary); /*changer les couleur et les padding pour avoir ceux de ton projet*/
+    padding: 30px;
+    padding-bottom: 40px;
+  } 
+
+footer > img { 
+    height: 90px;
+    width: auto;
+}
+
+.mmi_click { /*créé une class pour pouvoir changer que certain texte de couleur*/
+    text-align: center;
+    color: var(--rose);
+    font-family: var(--font-sans-serif);
+}
+
+footer > p {
+    text-align: center;
+    color: var(--text);
+    font-family: var(--font-sans-serif);
+}
+
+footer > h4 {
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: var(--name-footer);
+}
+
+.icons {
+    margin-left: auto;
+    margin-right: auto;
+    width: 4em;
+    height: 25px
+}
+
+.mmilogo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height:80px
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site projet FEMI-MUTILATE">
+
+    <title>FEMI-MUTILATE</title>
+
+    <link rel="stylesheet" href="/src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <!-- Entête -->
+    <header x-data="{ open: false }">
+        <img src="/public/img/logo.png"> 
+
+        <span>Femi-mutilate</span>
+
+        <button class="open_navigation" x-on:click="open = !open" :class="{ 'active': open }">
+            <span></span>
+        </button>
+    
+        <!-- Menu -->
+        <nav :class="{ 'active': open }">
+            <ul>
+                <li>
+                    <h1>L’excision</h1>
+                </li>
+                <li>
+                    <h1>Waris Dirie</h1>
+                </li>
+                <li>
+                    <h1>Fleur du désert</h1>
+                </li>
+                <li>
+                    <h1>Autres projets</h1>
+                </li>
+                <li>
+                    <h1>Galerie / Frise</h1>
+                </li>
+                <li>
+                    <h1>Glossaire</h1>
+                </li>
+                <li>
+                    <h1>Contact</h1>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>A propos</h1>
+
+            <div class="content">
+                <p>
+                    Actuellement étudiante en BUT MMI première année, des projets sont à réaliser durant les 3 années. <br>
+                    Le sujet qui m’a amené à créer ce site est “des Amazones à Balance ton porc, les visages du féminisme”. <br> <br>
+                    Le but de ce site est donc de vous informer sur le sujet du féminisme. <br>
+                    Mes articles principaux on pour thème l’excision. <br>
+                    Un thème relativement oublier dans le combat féministe, c’est pour cela que je le met en avant ici. <br> <br>
+                    N’hésitez pas à me rejoindre sur les réseaux, et à appelez les numéros d’aides si vous êtes mal ou en danger.
+                </p>
+            </div>
+            <div class="actions">
+                <a href="contact.html" class="btn">Besoin d'aide ?</a>
+            </div> <br>
+    </main>
+
+    <footer>
+        <img src="/public/img/logo.png" alt="logo-site"> 
+        <h4>Rose Menegain</h4>
+        <p>Ce projet est réalisé dans le cadre pédagogique du département</p> 
+        <p class="mmi_click">MMI de Montbéliard</p>
+        <p>Email | Aide</p>
+        <p>Nous suivre</p>
+        <img class="icons" src="/public/icons/Vector.svg" alt="facebook"> 
+        <img class="icons" src="/public/icons/instagram1.svg" alt="instagram">
+        <img class="icons" src="/public/icons/linkedin1.svg" alt="linkedin">
+        <img class="mmilogo" src="/public/img/mmi.png" alt="logo-MMI">
+    </footer>
+</body>
+</html>

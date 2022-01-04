@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site projet FEMI-MUTILATE">
+
+    <title>FEMI-MUTILATE</title>
+
+    <link rel="stylesheet" href="/src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <!-- Entête -->
+    <header x-data="{ open: false }">
+        <img src="/public/img/logo.png"> 
+
+        <span>Femi-mutilate</span>
+
+        <button class="open_navigation" x-on:click="open = !open" :class="{ 'active': open }">
+            <span></span>
+        </button>
+    
+        <!-- Menu -->
+        <nav :class="{ 'active': open }">
+            <ul>
+                <li>
+                    <h1>L’excision</h1>
+                </li>
+                <li>
+                    <h1>Waris Dirie</h1>
+                </li>
+                <li>
+                    <h1>Fleur du désert</h1>
+                </li>
+                <li>
+                    <h1>Autres projets</h1>
+                </li>
+                <li>
+                    <h1>Galerie / Frise</h1>
+                </li>
+                <li>
+                    <h1>Glossaire</h1>
+                </li>
+                <li>
+                    <h1>Contact</h1>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Autres projets</h1>
+    <ul>
+        <li><img src="public/img/autres_projets/Logo Matthieu.png" alt="projet Matthieu"></li>
+        <li><img src="" alt=""></li>
+        <li><img src="public/img/autres_projets/Logo Maxime.png" alt=""></li>
+        <li><img src="public/img/autres_projets/Logo Iris.png" alt=""></li>
+        <li><img src="public/img/autres_projets/Orientale.png" alt=""></li>
+        <li><img src="public/img/autres_projets/image 1.png" alt=""></li>
+        <li><img src="public/img/autres_projets/Logo Andreas.png" alt=""></li>
+        <li><img src="public/img/autres_projets/Logo Arthur.png" alt=""></li>
+        <li><img src="public/img/autres_projets/Logo Gwendal.png" alt=""></li>
+        <li><img src="public/img/autres_projets/Logo Loup.png" alt=""></li>
+        <li><img src="public/img/autres_projets/Logo Maelle.png" alt=""></li>
+    </ul>
+    <ul>
+        <li><a href="">Femin'In	|MONTURET Matthieu</a></li>
+        <li><a href="https://feminschool.lucasmoramarco.fr/">FeminsChool | Moramarco Lucas</a></li>
+        <li><a href="">Le féminisme à travers l'histoire | MERCIER Maxime</a></li>
+        <li><a href="">Mobilization for afghan women | Lavaine Iris</a></li>
+        <li><a href="">Fémi'siteweb	| NELLINGER Gwendal</a></li>
+        <li><a href="">Femisimply | Meyer Arthur</a></li>
+        <li><a href="https://feminorway.andreaslopez.fr/">FemiNorway | Lopez Andreas</a></li>
+        <li><a href="">Femin'history | Marchal Maëlle</a></li>
+        <li><a href="">Orientale | Mach-houty Elias</a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+</main>
+</body>
+</html>

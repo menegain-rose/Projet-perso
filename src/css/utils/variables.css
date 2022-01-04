@@ -1,0 +1,30 @@
+:root {
+    /* Color styles */
+    --primary: rgba(71, 0, 1, 1);
+    --secondary: rgba(25, 20, 16, 1);
+    --white: rgba(255, 255, 255, 1);
+    --block: rgba(115, 0, 2, 1);
+    --rose: rgba(253, 141, 143, 1);
+    --text: rgba(224, 224, 224, 1);
+    --small_title: rgba(237, 237, 237, 1);
+    --title_page: rgba(215, 151, 105,1);
+
+    /* Text-size styles */
+    /* base font-size: base (16px) */
+    --base: 0.9375rem;
+    --title-xxl: 2.25rem;
+    --title-xl: 2.1875rem;
+    --title-lg: 1.0625rem;
+    --text-sm: 0.9375rem;
+    --name-footer: 1.6875rem;
+
+    /* Font-family style */
+    --font-mono: 'Bubbler One';
+    --font-sans-serif: 'Comfortaa';
+
+    /* Espaces */
+    --space1x: 17px;
+    --space2x: 20px;
+    --space3x: 22px;
+    --space4x: 50px;
+}
