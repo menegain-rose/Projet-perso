@@ -53,19 +53,21 @@
     <main>
         <h1>Galerie_Frise</h1>
         frise 
-        <article x-data="{ art: false }">
+        <div x-data="{ art: false }">
         <h2>Simone veil </h2>
         <img src="public/img/galerie/Simone Veil.jpg" alt="Simone veil">
         <img  x-on:click="art = !open"  src="public/icons/Fleche vers le bas.svg" alt="Fleche vers le bas">
-        <p :class="{ 'active': art }">Simone Veil née le 13 juillet 1927 et morte le 30 juin 2017. 
+        <p :class="{ 'active': art }">
+            Simone Veil née le 13 juillet 1927 et morte le 30 juin 2017. 
             C'est une magistrate et une femme d’État française.
             Après des études de droit et de science politique, elle entre dans la magistrature comme haut fonctionnaire.
 
             En 1974, elle devient ministre de la Santé. 
             Elle fait adopter la loi dépénalisant le recours à l'interruption volontaire de grossesse (IVG), loi appelée ensuite
-            « loi Veil ». ></p>
+            « loi Veil ».
+        </p>
         
-        </article>  
+        </div>  
     </main>   
 </body>
 </html>
