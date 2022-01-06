@@ -110,10 +110,23 @@ main {
     padding: 7px 102px;
 }
 
+.imagart3 {
+    position: relative;
+    top: -60px;
+    right: -40px;
+}
+
+.imagart2 {
+    position: relative;
+    left: -40px;
+    bottom: -40px;
+}
+
 main > h1 {
     color: var(--title_page);
     font-family: var(--font-mono); /* appliquer une police */
     font-size: var(--title-xl);
+    text-align: center;
 }
 
 main > h2 {
@@ -158,6 +171,8 @@ main > dl > dd {
 }
 
 main img {
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 235px;
     height: auto;
     display: block;
@@ -177,7 +192,9 @@ main img {
 .content > h2 {
     color : var(--text);
     font-family: var(--small_title);
-    font-size: var(--title-lg)
+    font-size: var(--title-lg);
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 .content > p {
@@ -199,6 +216,11 @@ main img {
     margin-bottom: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+main li {
+    color: var(--text);
+    font-family: var(--text);
 }
 
 /** Caroussel**/
