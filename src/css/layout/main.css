@@ -145,7 +145,7 @@ main > p {
 }
 
 main > dl > dt {
-    color: var(--small_title);
+    color: var(--rose);
     font-family: var(--font-sans-serif); /* appliquer une police */
     font-size: var(--title-lg);
     padding-top: 20px;
@@ -156,6 +156,13 @@ main > dl > dd {
     font-family: var(--text);
 }
 
+main img {
+    width: 235px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .button2 {
     position: relative;
@@ -234,3 +241,4 @@ main > dl > dd {
     position: relative;
     overflow: hidden;
 }
+
