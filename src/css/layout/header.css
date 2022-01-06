@@ -25,9 +25,16 @@ header > span {
 }
 
 header nav ul li {
-    color: var(--white);
     font-family: var(--font-mono); /* appliquer une police */
-    font-size: var(--title-xl);
+    list-style: none; /* permet de retirer les puces d'une liste */
+}
+
+header nav ul li a {
+    color: var(--white);
+    font-size: var(--textmenu);
+    text-decoration: none;
+    margin: 15px 25px;
+    display: block;
 }
 
 /**
@@ -77,7 +84,7 @@ header > nav {
     top: 170px;
     left: 0;
     width: 100%;
-    height: calc(100% - 170px); /* Calculer automatiquement la hauteur en fonction de la hauteur du header */
+    height: calc(100vh - 170px); /* Calculer automatiquement la hauteur en fonction de la hauteur du header */
     background-color: #470001;
     visibility: hidden;
     opacity: 0;

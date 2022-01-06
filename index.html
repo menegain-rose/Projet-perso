@@ -10,9 +10,10 @@
 
     <link rel="stylesheet" href="/src/css/style.css"/>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <script src="https://animejs.com/lib/anime.min.js"></script>
-    <script src="src/js/fonctions.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="/src/js/fonctions.js"></script>
 </head>
 <body x-data="{ open: false }" :class="{ 'open-menu': open }">
     <!-- Entête -->
@@ -20,7 +21,7 @@
         <a href="index.html">
             <img src="/public/img/logo.png" alt="logo du site"> 
         </a>
-        
+
         <span>Femi-mutilate</span>
 
         <button class="open_navigation" x-on:click="open = !open">
@@ -60,7 +61,9 @@
         <!--changer de langue-->
         <section>
             <div>
-                <img class="changlang" src="public/img/drapeau-anglais.png" alt="Changement langue du site en anglais">
+                <a href="index-anglais.html">
+                    <img class="changlang" src="public/img/drapeau-anglais.png" alt="Changement langue du site en anglais">  
+                </a>
             </div>
         </section>
         <!-- Introduction  -->
@@ -121,28 +124,22 @@
             </article>
         </section>
         
- 
-            <!--carroussel-->
+        <!-- Carroussel -->
         <div class="exemples carrousel">
             <div class="droite155">&nbsp;</div>
-            <div class="carrousel">
-                <div class="imagescc">
-                    <img id="img1" class="imagecc" src="public/img/galerie/Hélène-Cixous.jpg"/>
-                    <img id="img2" class="imagecc" src="public/img/galerie/Louise-Weiss.jpg">
-                    <img id="img3" class="imagecc" src="public/img/galerie/Maud-Wood-Park.jpg"/>
-                    <img id="img4" class="imagecc" src="public/img/galerie/Michelle-Obama.jpg"/>
-                    <img id="img5" class="imagecc" src="public/img/galerie/Simone-Veil.jpg"/>
-                    <img id="img6" class="imagecc" src="public/img/galerie/Valérie-Rey-Robert.jpg"/>
-                    <img id="img7" class="imagecc" src="public/img/galerie/Waris-Dirie.jpg"/>
-                </div>
+            <div class="slider">
+                <div><img src="public/img/galerie/Hélène-Cixous.jpg"/></div>
+                <div><img src="public/img/galerie/Louise-Weiss.jpg"></div>
+                <div><img src="public/img/galerie/Maud-Wood-Park.jpg"/></div>
+                <div><img src="public/img/galerie/Michelle-Obama.jpg"/></div>
+                <div><img src="public/img/galerie/Simone-Veil.jpg"/></div>
+                <div><img src="public/img/galerie/Valérie-Rey-Robert.jpg"/></div>
+                <div><img src="public/img/galerie/Waris-Dirie.jpg"/></div>
             </div>
         </div>
-        <script>
-        
-            carrouselImages();
-                    
-        </script>
-        <button class="button2">Voir la galerie</button>
+        <a href="galerie.html" class="btn">
+            Voir la galerie
+        </a>
     </main>
 
     <!-- Pied de page -->
@@ -153,10 +150,16 @@
         <p class="mmi_click">MMI de Montbéliard</p>
         <p>Email | Aide</p>
         <p>Nous suivre</p>
-        <img class="icons" src="/public/icons/Vector.svg" alt="facebook"> 
-        <img class="icons" src="/public/icons/instagram1.svg" alt="instagram">
-        <img class="icons" src="/public/icons/linkedin1.svg" alt="linkedin">
-        <img class="mmilogo" src="/public/img/mmi.png" alt="logo-MMI">
+        
+        <div class="icons">
+            <img src="/public/icons/Vector.svg" alt="facebook"> 
+            <img src="/public/icons/instagram1.svg" alt="instagram">
+            <img src="/public/icons/linkedin1.svg" alt="linkedin">
+        </div>
+
+        <div class="mmilogo">
+            <img src="/public/img/mmi.png" alt="logo-MMI">
+        </div>
     </footer>
 </body>
 </html>

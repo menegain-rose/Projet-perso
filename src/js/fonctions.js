@@ -1,44 +1,27 @@
-function carrouselImages() {
-    var imagescc = document.querySelectorAll('.image');
-    let d = 1600;
-    let delta = 1000;
-
-    imagescc.forEach(function(img,indice) {
-        imgcc.style.zIndex = imagescc.length - indice;
-    });
-
-    let anim155 = anime.timeline({
-        loop: true,
-        delay: 0
-    });
-
-    anim155.add({
-        targets: imagescc,
-        translateX: [{value: '500', duration: d},
-                     {value: '-500', duration: 0, delay: function(img,ind) {
-                         if (ind == 0) return (7*delta)+(6*d);
-                         if (ind == 1) return (6*delta)+(5*d);
-                         if (ind == 2) return (5*delta)+(4*d);
-                         if (ind == 3) return (4*delta)+(3*d);
-                         if (ind == 4) return (3*delta)+(2*d);
-                         if (ind == 5) return (2*delta)+d;
-                         if (ind == 6) return delta;
-                         return 0;
-                     }},
-                     {value: '0', duration: function(img,ind) {
-                         if (ind == 4) return 0;
-                         return d;
-                     }}],
-        easing: 'linear',
-        delay: function(img,ind) {
-            if (ind == 0) return delta;
-            if (ind == 1) return (2*delta)+d;
-            if (ind == 2) return (3*delta)+(2*d);
-            if (ind == 3) return (4*delta)+(3*d);
-            if (ind == 4) return (5*delta)+(4*d);
-            if (ind == 5) return (6*delta)+(5*d);
-            if (ind == 6) return (7*delta)+(6*d);
-            return (8*delta)+(7*d);
-        }
-    });
+function slider()
+{
+    const sliders = document.querySelectorAll('.slider'); // Récupération de tout les sliders sur la page
+    if (sliders.length > 0) { // Test si minimum 1 slider existe sur la page
+        tns({
+            items: 2,
+            center: true,
+            loop: true,
+            startIndex: 1,
+            swipeAngle: false,
+            speed: 400,
+            nav: false,
+            gutter: 15,
+            controlsText: [
+                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.71 6.71a.996.996 0 0 0-1.41 0L8.71 11.3a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z"/></svg>', 
+                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"/></svg>'
+            ],
+        }); // Lancement du slider avec les options choisies
+    }
 }
+
+/**
+ * Attend que le DOM soit chargé
+ */
+document.addEventListener("DOMContentLoaded", function() {
+    slider(); // exécute la function slider
+});

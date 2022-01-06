@@ -1,0 +1,24 @@
+.slider {
+    width: 100%;
+}
+
+.carrousel button[data-controls="prev"],
+.carrousel button[data-controls="next"] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.carrousel button[data-controls="prev"] svg,
+.carrousel button[data-controls="next"] svg {
+    width: 25px;
+    height: 25px;
+}
+
+
+.carrousel button[data-controls="prev"] svg path,
+.carrousel button[data-controls="next"] svg path {
+    fill: var(--text);
+}
