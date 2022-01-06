@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site projet FEMI-MUTILATE">
+
+    <title>FEMI-MUTILATE</title>
+
+    <link rel="stylesheet" href="/src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{ open: false }" :class="{ 'open-menu': open }">
+    <!-- Entête -->
+    <header>
+        <img src="/public/img/logo.png" alt="logo du site"> 
+
+        <span>Femi-mutilate</span>
+
+        <button class="open_navigation" x-on:click="open = !open">
+            <span></span>
+        </button>
+
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="article1.html">L'excision</a>
+                </li>
+                <li>
+                    <a href="article2.html">Waris Dirie</a>
+                </li>
+                <li>
+                    <a href="article3.html">Fleur du désert</a>
+                </li>
+                <li>
+                    <a href="autres_projets.html">Autres projets</a>
+                </li>
+                <li>
+                    <a href="galerie_frise.html">Galerie / Frise</a>
+                </li>
+                <li>
+                    <a href="glossaire.html">Glossaire</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>About us</h1>
+
+            <div class="content">
+                <p>
+                    Actually a student in BUT MMI first year, a projects are to be realized during the 3 years. <br>
+                    The subject that led me to create this site is “from the Amazons to Mee Too, the faces of feminism”. <br>
+                    The aim of this site is therefore to inform you on the subject of feminism. <br>
+                    My main articles are about excision.
+                    A theme that is relatively forgotten in the feminist struggle, that is why I am highlighting it here. <br>
+                    Do not hesitate to join me on the networks, and to call the help numbers if you are ill or in danger.
+                </p>
+            </div>
+            <div class="actions">
+                <a href="contact.html" class="btn">Besoin d'aide ?</a>
+            </div> <br>
+    </main>
+
+    <footer>
+        <img src="/public/img/logo.png" alt="logo-site"> 
+        <h4>Rose Menegain</h4>
+        <p>Ce projet est réalisé dans le cadre pédagogique du département</p> 
+        <p class="mmi_click">MMI de Montbéliard</p>
+        <p>Email | Aide</p>
+        <p>Nous suivre</p>
+        <img class="icons" src="/public/icons/Vector.svg" alt="facebook"> 
+        <img class="icons" src="/public/icons/instagram1.svg" alt="instagram">
+        <img class="icons" src="/public/icons/linkedin1.svg" alt="linkedin">
+        <img class="mmilogo" src="/public/img/mmi.png" alt="logo-MMI">
+    </footer>
+</body>
+</html>

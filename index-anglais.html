@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site projet FEMI-MUTILATE">
+
+    <title>FEMI-MUTILATE</title>
+
+    <link rel="stylesheet" href="/src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+</head>
+<body x-data="{ open: false }" :class="{ 'open-menu': open }">
+    <!-- Entête -->
+    <header>
+        <img src="/public/img/logo.png" alt="logo du site"> 
+
+        <span>Femi-mutilate</span>
+
+        <button class="open_navigation" x-on:click="open = !open">
+            <span></span>
+        </button>
+
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="article1.html">L'excision</a>
+                </li>
+                <li>
+                    <a href="article2.html">Waris Dirie</a>
+                </li>
+                <li>
+                    <a href="article3.html">Fleur du désert</a>
+                </li>
+                <li>
+                    <a href="autres_projets.html">Autres projets</a>
+                </li>
+                <li>
+                    <a href="galerie_frise.html">Galerie / Frise</a>
+                </li>
+                <li>
+                    <a href="glossaire.html">Glossaire</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corps du site -->
+    <main>
+        <!-- Introduction  -->
+        <section id="intro">
+            <p>
+                Sur ce site web, vous allez pouvoir découvrir un sujet du féminisme moins connu et mis de côté → l’excision<br/>
+                Vous trouverez également quelques femmes aillant militer d’une certaines façon pour le féminisme. <br/><br/>
+                Si vous êtes victime ou témoin de violence, appelez le 3919 & 119.
+            </p>
+
+            <div class="actions">
+                <span>Qui sommes-nous ?</span>
+                <a href="a_propos.html" class="btn">En savoir +</a>
+            </div>
+        </section>
+
+        <!-- block articles -->
+        <section id="articles">
+            <article>
+                <div class="image">
+                    <img src="public/img/index/Excision.png" alt="Excision">
+                    <a href="article1.html" class="fab">+</a>
+                </div>
+                <div class="content">
+                    <h2>L'excision</h2>
+                    <p>
+                        Ayez de nouvelles connaissances sur le féminisme, découvrez ou non qu’est ce que l’excision, où est-elle pratiquée, les conséquences de cet acte, et comment elle évolue...
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
+                    <img src="public/img/index/2009.png" alt="Waris Dirie">
+                    <a href="article1.html" class="fab">+</a>
+                </div>
+                <div class="content">
+                    <h2>Waris Dirie</h2>
+                    <p>
+                        Découvrez qui est Waris, cette femme féministe qui combat contre l’excision.
+                        Elle même l’a subit, et à décidé de changer les choses...
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
+                    <img src="public/img/index/Fleur-du-desert.png" alt="Autobiographie">
+                    <a href="article1.html" class="fab">+</a>
+                </div>
+                <div class="content">
+                    <h2>Fleur du désert</h2>
+                    <p>
+                        Découvrez l’autobiographie de Waris Dirie. Dans lequel elle nous raconte son histoire qui débute en Somalie.
+                        Viol, excision, fuite, ça vie fut mouvementée...
+                    </p>
+                </div>
+            </article>
+        </section>
+        
+ 
+            <!--carroussel-->
+        <div class="exemples carrousel">
+            <div class="droite155">&nbsp;</div>
+            <div class="carrousel">
+                <div class="images">
+                    <img id="img1" class="image" src="public/img/galerie/Hélène-Cixous.jpg"/>
+                    <img id="img2" class="image" src="public/img/galerie/Louise-Weiss.jpg">
+                    <img id="img3" class="image" src="public/img/galerie/Maud-Wood-Park.jpg"/>
+                    <img id="img4" class="image" src="public/img/galerie/Michelle-Obama.jpg"/>
+                    <img id="img5" class="image" src="public/img/galerie/Simone-Veil.jpg"/>
+                    <img id="img6" class="image" src="public/img/galerie/Valérie-Rey-Robert.jpg"/>
+                    <img id="img7" class="image" src="public/img/galerie/Waris-Dirie.jpg"/>
+                </div>
+            </div>
+        </div>
+        <script>
+        
+            carrouselImages();
+                    
+        </script>
+        <button class="button2">Voir la galerie</button>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <img src="/public/img/logo.png" alt="logo-site"> 
+        <h4>Rose Menegain</h4>
+        <p>Ce projet est réalisé dans le cadre pédagogique du département</p> 
+        <p class="mmi_click">MMI de Montbéliard</p>
+        <p>Email | Aide</p>
+        <p>Nous suivre</p>
+        <img class="icons" src="/public/icons/Vector.svg" alt="facebook"> 
+        <img class="icons" src="/public/icons/instagram1.svg" alt="instagram">
+        <img class="icons" src="/public/icons/linkedin1.svg" alt="linkedin">
+        <img class="mmilogo" src="/public/img/mmi.png" alt="logo-MMI">
+    </footer>
+</body>
+</html>
+

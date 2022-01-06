@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site projet FEMI-MUTILATE">
+
+    <title>FEMI-MUTILATE</title>
+
+    <link rel="stylesheet" href="/src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{ open: false }" :class="{ 'open-menu': open }">
+    <!-- Entête -->
+    <header>
+        <img src="/public/img/logo.png" alt="logo du site"> 
+
+        <span>Femi-mutilate</span>
+
+        <button class="open_navigation" x-on:click="open = !open">
+            <span></span>
+        </button>
+
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="article1.html">L'excision</a>
+                </li>
+                <li>
+                    <a href="article2.html">Waris Dirie</a>
+                </li>
+                <li>
+                    <a href="article3.html">Fleur du désert</a>
+                </li>
+                <li>
+                    <a href="autres_projets.html">Autres projets</a>
+                </li>
+                <li>
+                    <a href="galerie_frise.html">Galerie / Frise</a>
+                </li>
+                <li>
+                    <a href="glossaire.html">Glossaire</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corps du site -->
+    <main>
+        <h1>Waris Dirie</h1>
+
+        <section id="contenu-art2">
+            <div class="content">
+                <h2>Qui est-elle ?</h2>
+                <p>
+                    Waris Dirie est une femme, né le 21 octobre 1965 à Gaal Kacyo en Somalie, de nationalité Somalienne et Autrichienne. <br/>
+                    Waris prit la fuite à l’âge de 13 ans quand son père décida de la marier à un homme de 60 ans. <br>
+                    C’est quand elle travaillait dans un fast-food, que Waris à été remarquée par un célèbre photographe Terence Donovan. <br>
+                    Une carrière de mannequin commença en 1987 en couverture de “Calendrier Pirelli”.
+                </p>
+                <img src="public/img/article2/Magasine.jpg" alt="Waris Dirie, couverture de magasin">
+                <p>
+                    Lors d’une interview Waris révèle l’excision dont elle fût victime à l’âge de 5 ans. <br>
+                    Elle écrit son premier livre autobiographique “Fleur du désert” en 1998, son livre étant le plus connu. 
+                    Elle en écrit d’autres comme : 
+                    L'Aube du --, A Letter to My Mother, Black Women, White Country, Safa et Desert Children. <br>
+                    C’est lors d’une entrevue du magazine Marie Claire, au milieu des années 1990 qu’elle décida de témoigner de son excision et de celle que des miliers de filles et femmes qui le subissent encore en Afrique.
+                </p>
+                <img src="public/img/article2/Livre.jpg" alt="Page de couverture de l'autobiogarphie">
+            </div>
+            <div class="content">
+                <h2>Ca lutte contre l’excision</h2>
+                <p>
+                    Elle commença en 2002, quand elle décida d’en parler. <br>
+                    Elle décida de fonder la “WARIS DIRIE FOUNDATION”.
+                </p>
+                <link rel="stylesheet" href="https://www.desertflowerfoundation.org/fr/acceuil.html">
+                <p>
+                    En février 2005, elle rencontre 25 ministres d’Etat membres pour discuter des mesures à prendre pour lutter contre les MGF.
+                    En 2006, L’Union Européenne combat officiellement l’excision pour la première fois de l’histoire. <br>
+                    En 2007, Waris Dirie commence une campagne de prévention avec Scotland Yard et la BBC en Grande-Bretagne. 
+                    Warris dit : 
+                </p>
+                <blockquote class="textes-à-part">
+                    « Les gens doivent comprendre que la mutilation génitale féminine n’a rien à voir avec la tradition, la religion ou la culture. C’est une forme perverse d’abus infligés aux enfants. Tous les pays du monde devraient prendre de sérieuses et drastiques mesures contre ceux qui commettent ces crimes. »
+                </blockquote>
+                <img src="public/img/article2/Articles.jpg" alt="Article sur lequel est noté la citation">
+                <p>
+                    Grâce à la pression de la communauté internationale, 14 États africains dont le Kenya, le Ghana, le Burkina Faso, la Côte d’Ivoire, la République de Centre Afrique, le Bénin et le Togo ont déclaré la pratique de l’excision totalement illégale depuis 2007. <br>
+                    En janvier 2009, elle devient membre du Conseil d’administration de la nouvelle Fondation d’Entreprise PPR pour la Dignité et les Droits des Femmes, soutien d'une vingtaine de projets en partenariat avec les ONG locales et internationales, notamment au Mali, en Inde, au Pakistan, au Nicaragua et en France. <br>
+                    Waris est une femme ayant subit énormément de choses dans ça vie, principalement dans son enfance qui fut intense et pas toujours très joyeuse. <br>
+                    Dans l’article “Fleur du désert”, une petite partie de sa vie sera revue.
+                </p>    
+            </div>
+        <section>
+            <button class=glsr>Glossaire</button>
+        </section>
+    </main>
+
+    <footer>
+        <img src="/public/img/logo.png" alt="logo-site"> 
+        <h4>Rose Menegain</h4>
+        <p>Ce projet est réalisé dans le cadre pédagogique du département</p> 
+        <p class="mmi_click">MMI de Montbéliard</p>
+        <p>Email | Aide</p>
+        <p>Nous suivre</p>
+        <img class="icons" src="/public/icons/Vector.svg" alt="facebook"> 
+        <img class="icons" src="/public/icons/instagram1.svg" alt="instagram">
+        <img class="icons" src="/public/icons/linkedin1.svg" alt="linkedin">
+        <img class="mmilogo" src="/public/img/mmi.png" alt="logo-MMI">
+    </footer>
+</body>
+</html>

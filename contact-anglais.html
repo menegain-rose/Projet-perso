@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site projet FEMI-MUTILATE">
+
+    <title>FEMI-MUTILATE</title>
+
+    <link rel="stylesheet" href="/src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{ open: false }" :class="{ 'open-menu': open }">
+    <!-- Entête -->
+    <header>
+        <img src="/public/img/logo.png" alt="logo du site"> 
+
+        <span>Femi-mutilate</span>
+
+        <button class="open_navigation" x-on:click="open = !open">
+            <span></span>
+        </button>
+
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="article1.html">L'excision</a>
+                </li>
+                <li>
+                    <a href="article2.html">Waris Dirie</a>
+                </li>
+                <li>
+                    <a href="article3.html">Fleur du désert</a>
+                </li>
+                <li>
+                    <a href="autres_projets.html">Autres projets</a>
+                </li>
+                <li>
+                    <a href="galerie_frise.html">Galerie / Frise</a>
+                </li>
+                <li>
+                    <a href="glossaire.html">Glossaire</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+       <div class=personal-contact>
+            <form method="get">
+                <label>Nom</label>
+                <input type="text" required> <br> <br>
+                <label>E-mail</label>
+                <input type="text" required> <br> <br>
+                <label>Numéro</label>
+                <input type="text" required> <br> <br>
+                <label>Message</label>
+                <input type="text" required> <br><br>
+                <input class=btn-envoyer type="submit" value="Envoyer">
+            </form>
+        </div>
+        <div>
+            <h2>Aide</h2>
+            <p>
+                Si vous êtes victimes ou témoins de violence (chantage, humiliation, injures, coups...), 
+                Appelez le :
+            </p>
+            <p class=number-help>
+                3919
+            </p>
+            <p>
+                Enfance en danger, ce numéro dédié à la prévention et la protection des enfants en danger ou en risque de l’être. 
+                Appelez le :
+            </p>
+            <p class=number-help>
+                119
+            </p> <br>
+        </div>
+    </main>
+
+    <footer>
+        <img src="/public/img/logo.png" alt="logo-site"> 
+        <h4>Rose Menegain</h4>
+        <p>Ce projet est réalisé dans le cadre pédagogique du département</p> 
+        <p class="mmi_click">MMI de Montbéliard</p>
+        <p>Email | Aide</p>
+        <p>Nous suivre</p>
+        <img class="icons" src="/public/icons/Vector.svg" alt="facebook"> 
+        <img class="icons" src="/public/icons/instagram1.svg" alt="instagram">
+        <img class="icons" src="/public/icons/linkedin1.svg" alt="linkedin">
+        <img class="mmilogo" src="/public/img/mmi.png" alt="logo-MMI">
+    </footer>
+</body>
+</html>
