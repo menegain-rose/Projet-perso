@@ -1,15 +1,6 @@
-function bases() {
-    let animation = anime({
-        targets: '.full1',
-        translateX: 250,
-        autoplay: false
-    });
-    return animation.play;
-}
-
 function carrouselImages() {
     var images = document.querySelectorAll('.image');
-    let d = 2000;
+    let d = 1600;
     let delta = 1000;
 
     images.forEach(function(img,indice) {

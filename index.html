@@ -9,8 +9,10 @@
     <title>FEMI-MUTILATE</title>
 
     <link rel="stylesheet" href="/src/css/style.css"/>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
+    
 </head>
 <body x-data="{ open: false }" :class="{ 'open-menu': open }">
     <!-- Entête -->
@@ -53,6 +55,12 @@
 
     <!-- Corps du site -->
     <main>
+        <!--changer de langue-->
+        <section>
+            <div>
+
+            </div>
+        </section>
         <!-- Introduction  -->
         <section id="intro">
             <p>
@@ -70,7 +78,7 @@
         <!-- block articles -->
         <section id="articles">
             <article>
-                <div class="image">
+                <div class="imageb">
                     <img src="public/img/index/Excision.png" alt="Excision">
                     <a href="article1.html" class="fab">+</a>
                 </div>
@@ -83,7 +91,7 @@
             </article>
 
             <article>
-                <div class="image">
+                <div class="imageb">
                     <img src="public/img/index/2009.png" alt="Waris Dirie">
                     <a href="article2.html" class="fab">+</a>
                 </div>
@@ -97,7 +105,7 @@
             </article>
 
             <article>
-                <div class="image">
+                <div class="imageb">
                     <img src="public/img/index/Fleur-du-desert.png" alt="Autobiographie">
                     <a href="article3.html" class="fab">+</a>
                 </div>
@@ -116,14 +124,14 @@
         <div class="exemples carrousel">
             <div class="droite155">&nbsp;</div>
             <div class="carrousel">
-                <div class="images">
-                    <img id="img1" class="image" src="public/img/galerie/Hélène-Cixous.jpg"/>
-                    <img id="img2" class="image" src="public/img/galerie/Louise-Weiss.jpg">
-                    <img id="img3" class="image" src="public/img/galerie/Maud-Wood-Park.jpg"/>
-                    <img id="img4" class="image" src="public/img/galerie/Michelle-Obama.jpg"/>
-                    <img id="img5" class="image" src="public/img/galerie/Simone-Veil.jpg"/>
-                    <img id="img6" class="image" src="public/img/galerie/Valérie-Rey-Robert.jpg"/>
-                    <img id="img7" class="image" src="public/img/galerie/Waris-Dirie.jpg"/>
+                <div class="imagescc">
+                    <img id="img1" class="imagecc" src="public/img/galerie/Hélène-Cixous.jpg"/>
+                    <img id="img2" class="imagecc" src="public/img/galerie/Louise-Weiss.jpg">
+                    <img id="img3" class="imagecc" src="public/img/galerie/Maud-Wood-Park.jpg"/>
+                    <img id="img4" class="imagecc" src="public/img/galerie/Michelle-Obama.jpg"/>
+                    <img id="img5" class="imagecc" src="public/img/galerie/Simone-Veil.jpg"/>
+                    <img id="img6" class="imagecc" src="public/img/galerie/Valérie-Rey-Robert.jpg"/>
+                    <img id="img7" class="imagecc" src="public/img/galerie/Waris-Dirie.jpg"/>
                 </div>
             </div>
         </div>
