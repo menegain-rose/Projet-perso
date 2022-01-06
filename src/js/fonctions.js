@@ -1,10 +1,10 @@
 function carrouselImages() {
-    var images = document.querySelectorAll('.image');
+    var imagescc = document.querySelectorAll('.image');
     let d = 1600;
     let delta = 1000;
 
-    images.forEach(function(img,indice) {
-        img.style.zIndex = images.length - indice;
+    imagescc.forEach(function(img,indice) {
+        imgcc.style.zIndex = imagescc.length - indice;
     });
 
     let anim155 = anime.timeline({
@@ -13,7 +13,7 @@ function carrouselImages() {
     });
 
     anim155.add({
-        targets: images,
+        targets: imagescc,
         translateX: [{value: '500', duration: d},
                      {value: '-500', duration: 0, delay: function(img,ind) {
                          if (ind == 0) return (7*delta)+(6*d);

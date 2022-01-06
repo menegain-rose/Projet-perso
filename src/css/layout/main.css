@@ -110,18 +110,8 @@ main {
     padding: 7px 102px;
 }
 
-.imagart3 {
-    position: relative;
-    top: -60px;
-    right: -40px;
-}
 
-.imagart2 {
-    position: relative;
-    left: -40px;
-    bottom: -40px;
-}
-
+/** Polices **/
 main > h1 {
     color: var(--title_page);
     font-family: var(--font-mono); /* appliquer une police */
@@ -170,15 +160,35 @@ main > dl > dd {
     font-family: var(--text);
 }
 
-main img {
+
+/** Images **/
+.changlang {
+    width: 50px;
+    height: auto;
+}
+
+.imagart3 {
+    position: relative;
+    top: -60px;
+    right: -40px;
+}
+
+.imagart2 {
+    position: relative;
+    left: -40px;
+    bottom: -40px;
+}
+
+#contenu-art img {
     padding-top: 10px;
     padding-bottom: 10px;
     width: 235px;
     height: auto;
     display: block;
     margin-left: auto;
-    margin-right: auto;
-}
+    margin-right: auto; 
+ }
+
 
 .button2 {
     position: relative;

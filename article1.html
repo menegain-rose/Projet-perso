@@ -14,8 +14,10 @@
 <body x-data="{ open: false }" :class="{ 'open-menu': open }">
     <!-- Entête -->
     <header>
-        <img src="/public/img/logo.png" alt="logo du site"> 
-
+        <a href="index.html">
+            <img src="/public/img/logo.png" alt="logo du site"> 
+        </a>
+        
         <span>Femi-mutilate</span>
 
         <button class="open_navigation" x-on:click="open = !open">
@@ -53,7 +55,7 @@
     <main>
         <h1>L'excision</h1>
 
-        <section id="contenu-art1">
+        <section id="contenu-art">
             <div class="content">
                 <h2>Qu'est ce que c'est?</h2>
                 <p>

@@ -17,8 +17,10 @@
 <body x-data="{ open: false }" :class="{ 'open-menu': open }">
     <!-- Entête -->
     <header>
-        <img src="/public/img/logo.png" alt="logo du site"> 
-
+        <a href="index.html">
+            <img src="/public/img/logo.png" alt="logo du site"> 
+        </a>
+        
         <span>Femi-mutilate</span>
 
         <button class="open_navigation" x-on:click="open = !open">
@@ -58,7 +60,7 @@
         <!--changer de langue-->
         <section>
             <div>
-
+                <img class="changlang" src="public/img/drapeau-anglais.png" alt="Changement langue du site en anglais">
             </div>
         </section>
         <!-- Introduction  -->

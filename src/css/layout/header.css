@@ -10,7 +10,7 @@ header {
 /** ">" est utilisé pour selectionner 
  * uniquement les balises <img/> sous <header>
  */
-header > img { 
+header > a > img { 
     height: 120px;
     width: auto;
 }
@@ -22,6 +22,12 @@ header > span {
     text-transform: uppercase; /* Mettre en majuscule */
     font-family: var(--font-mono); /* appliquer une police */
     font-size: var(--title-xxl);
+}
+
+header nav ul li {
+    color: var(--white);
+    font-family: var(--font-mono); /* appliquer une police */
+    font-size: var(--title-xl);
 }
 
 /**
