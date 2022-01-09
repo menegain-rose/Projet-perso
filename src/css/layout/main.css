@@ -249,3 +249,26 @@ main li {
     color: var(--text);
     font-family: var(--text);
 }
+
+.autresprjt img {
+    width: 75px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.propoarts {
+
+}
+
+.propoarts div {
+
+}
+
+.autresprjt a {
+    font-family: var(--font-sans-serif); /* appliquer une police */
+    font-size: var(--text-sm);
+    color: var(--text);
+    text-decoration: none;
+}

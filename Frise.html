@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site projet FEMI-MUTILATE">
+
+    <title>FEMI-MUTILATE</title>
+
+    <link rel="stylesheet" href="/src/css/style.css"/>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="/src/js/fonctions.js"></script>
+</head>
+<body x-data="{ open: false, openLang: false }" :class="{ 'open-menu': open }">
+    <!-- Entête -->
+    <header>
+        <a href="index.html">
+            <img src="/public/img/logo.png" alt="logo du site"> 
+        </a>
+
+        <span>Femi-mutilate</span>
+
+        <button class="open_navigation" x-on:click="open = !open">
+            <span></span>
+        </button>
+
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="article1.html">L'excision</a>
+                </li>
+                <li>
+                    <a href="article2.html">Waris Dirie</a>
+                </li>
+                <li>
+                    <a href="article3.html">Fleur du désert</a>
+                </li>
+                <li>
+                    <a href="autres_projets.html">Autres projets</a>
+                </li>
+                <li>
+                    <a href="galerie.html">Galerie</a>
+                </li>
+                <li>
+                    <a href="">Frise</a>
+                </li>
+                <li>
+                    <a href="glossaire.html">Glossaire</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corps du site -->
+    <main>
+    
+    </main>
+    
+    <footer>
+        <img src="/public/img/logo.png" alt="logo-site"> 
+        <h4>Rose Menegain</h4>
+        <p>Ce projet est réalisé dans le cadre pédagogique du département</p> 
+        <p class="mmi_click">MMI de Montbéliard</p>
+        <p>Email | Aide</p>
+        <p>Nous suivre</p>
+        
+        <div class="icons">
+            <img src="/public/icons/Vector.svg" alt="facebook"> 
+            <img src="/public/icons/instagram1.svg" alt="instagram">
+            <img src="/public/icons/linkedin1.svg" alt="linkedin">
+        </div>
+
+        <div class="mmilogo">
+            <img src="/public/img/mmi.png" alt="logo-MMI">
+        </div>
+    </footer>
+</body>
+</html>
