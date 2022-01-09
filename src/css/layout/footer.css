@@ -50,3 +50,10 @@ footer > h4 {
     width: 73,62px;
     height: 85px;
 }
+
+footer a {
+    text-align: center;
+    color: var(--text);
+    font-family: var(--font-sans-serif);
+    text-decoration: none;
+}
