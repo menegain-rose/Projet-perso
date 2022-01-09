@@ -154,21 +154,24 @@ main > section > div > p {
 }
 
 .frise {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .frise p {
+    margin-left: 60px;
     margin-top: 30px;
 }
 
 .frise > .flechefrise {
     position: absolute;
     left: 20px;
-    height: 1130px;
+    height: 1200px;
 }
 
 .frise img {
-
+    position: absolute;
+    width: 30px;
+    height: 30px;
 }
 
 main > div > form > label {
