@@ -280,6 +280,19 @@ main span {
     padding-bottom: 10px;
 }
 
+main input {
+    background-color: var(--block);
+    border-color: var(--primary);
+    border-style: solid ;
+    border-radius: 5px;
+}
+
+.ctct {
+    border-color: var(--primary);
+    border-style: solid ;
+    border-radius: 5px;
+}
+
 main li {
     color: var(--text);
     font-family: var(--text);
@@ -332,3 +345,4 @@ main li {
     color: var(--text);
     text-decoration: none;
 }
+
