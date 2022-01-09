@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="/src/js/fonctions.js"></script>
 </head>
-<body x-data="{ open: false }" :class="{ 'open-menu': open }">
+<body x-data="{ open: false, openLang: false }" :class="{ 'open-menu': open }">
     <!-- Entête -->
     <header>
         <a href="index.html">
@@ -60,12 +60,24 @@
     <main>
         <!--changer de langue-->
         <section>
-            <div>
-                <a href="index-anglais.html">
-                    <img class="changlang" src="public/img/drapeau-anglais.png" alt="Changement langue du site en anglais">  
-                </a>
+            <div class="langs">
+                <p x-on:click="openLang = !openLang">
+                    <span>FR</span>
+                    <img src="public/img/drapeau-france.png" alt="Langue actuelle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5z"/></svg>
+                </p>
+                <ul :class="{ 'show': openLang }">
+                    <li>
+                        <a href="index-anglais.html">
+                            <span>EN</span>
+                            <img src="public/img/drapeau-anglais.png" alt="Langue">
+                        </a>
+                    </li>
+                </ul>
             </div>
+
         </section>
+
         <!-- Introduction  -->
         <section id="intro">
             <p>

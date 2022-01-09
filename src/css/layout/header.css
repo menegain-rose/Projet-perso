@@ -96,7 +96,6 @@ header > nav > ul > li {
     font-size: var(--title-xl);
     color: var(--text);
     text-decoration: none;
-
 }
 
 .open-menu {

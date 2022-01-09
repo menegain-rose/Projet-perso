@@ -9,8 +9,11 @@
     <title>FEMI-MUTILATE</title>
 
     <link rel="stylesheet" href="/src/css/style.css"/>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="/src/js/fonctions.js"></script>
 </head>
 <body x-data="{ open: false }" :class="{ 'open-menu': open }">
     <!-- Entête -->
@@ -29,22 +32,22 @@
         <nav>
             <ul>
                 <li>
-                    <a href="article1-anglais.html">L'excision</a>
+                    <a href="article1-anglais.html">Excision</a>
                 </li>
                 <li>
                     <a href="article2-anglais.html">Waris Dirie</a>
                 </li>
                 <li>
-                    <a href="article3-anglais.html">Fleur du désert</a>
+                    <a href="article3-anglais.html">Desert Flower</a>
                 </li>
                 <li>
-                    <a href="autres_projets-anglais.html">Autres projets</a>
+                    <a href="autres_projets-anglais.html">Others projects</a>
                 </li>
                 <li>
-                    <a href="galerie_frise-anglais.html">Galerie / Frise</a>
+                    <a href="galerie-anglais.html">Gallery</a>
                 </li>
                 <li>
-                    <a href="glossaire-anglais.html">Glossaire</a>
+                    <a href="glossaire-anglais.html">Glossary</a>
                 </li>
                 <li>
                     <a href="contact-anglais.html">Contact</a>
@@ -55,6 +58,25 @@
 
     <!-- Corps du site -->
     <main>
+        <!--changer de langue-->
+        <section>
+            <div class="langs">
+                <p x-on:click="openLang = !openLang">
+                    <span>FR</span>
+                    <img src="public/img/drapeau-france.png" alt="Langue actuelle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5z"/></svg>
+                </p>
+                <ul :class="{ 'show': openLang }">
+                    <li>
+                        <a href="index-anglais.html">
+                            <span>EN</span>
+                            <img src="public/img/drapeau-anglais.png" alt="Langue">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
         <!-- Introduction  -->
         <section id="intro">
             <p>
@@ -114,27 +136,22 @@
         </section>
         
  
-            <!--carroussel-->
+        <!-- Carroussel -->
         <div class="exemples carrousel">
             <div class="droite155">&nbsp;</div>
-            <div class="carrousel">
-                <div class="images">
-                    <img id="img1" class="image" src="public/img/galerie/Hélène-Cixous.jpg"/>
-                    <img id="img2" class="image" src="public/img/galerie/Louise-Weiss.jpg">
-                    <img id="img3" class="image" src="public/img/galerie/Maud-Wood-Park.jpg"/>
-                    <img id="img4" class="image" src="public/img/galerie/Michelle-Obama.jpg"/>
-                    <img id="img5" class="image" src="public/img/galerie/Simone-Veil.jpg"/>
-                    <img id="img6" class="image" src="public/img/galerie/Valérie-Rey-Robert.jpg"/>
-                    <img id="img7" class="image" src="public/img/galerie/Waris-Dirie.jpg"/>
-                </div>
+            <div class="slider">
+                <div><img src="public/img/galerie/Hélène-Cixous.jpg"/></div>
+                <div><img src="public/img/galerie/Louise-Weiss.jpg"></div>
+                <div><img src="public/img/galerie/Maud-Wood-Park.jpg"/></div>
+                <div><img src="public/img/galerie/Michelle-Obama.jpg"/></div>
+                <div><img src="public/img/galerie/Simone-Veil.jpg"/></div>
+                <div><img src="public/img/galerie/Valérie-Rey-Robert.jpg"/></div>
+                <div><img src="public/img/galerie/Waris-Dirie.jpg"/></div>
             </div>
         </div>
-        <script>
-        
-            carrouselImages();
-                    
-        </script>
-        <button class="btn">Voir la galerie</button>
+        <a href="galerie.html" class="btn">
+            Voir la galerie
+        </a>
     </main>
 
     <!-- Pied de page -->
@@ -145,10 +162,15 @@
         <p class="mmi_click">MMi to Montbéliard</p>
         <p>Email | help</p>
         <p>Follow us</p>
-        <img class="icons" src="/public/icons/Vector.svg" alt="facebook"> 
-        <img class="icons" src="/public/icons/instagram1.svg" alt="instagram">
-        <img class="icons" src="/public/icons/linkedin1.svg" alt="linkedin">
-        <img class="mmilogo" src="/public/img/mmi.png" alt="logo-MMI">
+
+        <div class="icons"> 
+            <img src="/public/icons/Vector.svg" alt="facebook"> 
+            <img src="/public/icons/instagram1.svg" alt="instagram">
+            <img src="/public/icons/linkedin1.svg" alt="linkedin">
+        </div>
+        <div class="mmilogo">
+            <img src="/public/img/mmi.png" alt="logo-MMI">
+        </div>
     </footer>
 </body>
 </html>
