@@ -98,14 +98,6 @@ main.with-lang {
     transform: translateY(60%);
 }
 
-.btn-envoyer {
-    background-color: var(--block);
-    border-radius: 5px;
-    box-shadow: 0px 3px 3px var(--secondary);
-    color: var(--text);
-    padding: 5px 10px;
-}
-
 .glsr {
     border-radius: 5px;
     background-color: var(--block-opacity);
@@ -177,11 +169,6 @@ main > section > div > p {
     position: absolute;
     width: 30px;
     height: 30px;
-}
-
-main > div > form > label {
-    color: var(--text);
-    font-family: var(--font-sans-serif);
 }
 
 main > p {
@@ -332,13 +319,6 @@ main span {
     padding-top: 10px;
     padding-bottom: 10px;
     color: var(--text);
-}
-
-main input {
-    background-color: var(--block-opacity);
-    border-color: var(--primary);
-    border-style: solid ;
-    border-radius: 5px;
 }
 
 .ctct {

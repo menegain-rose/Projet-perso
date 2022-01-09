@@ -1,6 +1,7 @@
 :root {
     /* Color styles */
     --primary: rgba(71, 0, 1, 1);
+    --primary-opacity: rgba(71, 0, 1, .6);
     --secondary: rgba(25, 20, 16, 1);
     --white: rgba(255, 255, 255, 1);
     --block: rgba(115, 0, 2, 1);

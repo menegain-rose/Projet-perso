@@ -1,0 +1,35 @@
+main .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+main .form-group {
+    margin-bottom: 10px;
+}
+
+main .form-group label {
+    color: var(--text);
+    font-family: var(--font-sans-serif);
+}
+
+main .form-group input {
+    background-color: var(--primary);
+    color: var(--text);
+    border-color: var(--primary);
+    border-style: solid ;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    outline: none; /* Enlever le contour dégeulasse bleu */
+    transition: background-color .4s;
+}
+
+main .form-group input:focus {
+    background-color: var(--primary-opacity);
+}
+
+main .form-action {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
