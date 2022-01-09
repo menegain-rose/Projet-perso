@@ -1,3 +1,13 @@
+.personal-contact {
+    background-color: var(--block-opacity);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--text);
+}
+
 main .form-group {
     display: flex;
     flex-direction: column;
