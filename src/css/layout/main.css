@@ -148,6 +148,29 @@ main > div > p {
     font-family: var(--font-sans-serif); 
 }
 
+main > section > div > p {
+    color: var(--text);
+    font-family: var(--font-sans-serif); 
+}
+
+.frise {
+    margin-left: 40px;
+}
+
+.frise p {
+    margin-top: 30px;
+}
+
+.frise > .flechefrise {
+    position: absolute;
+    left: 20px;
+    height: 1130px;
+}
+
+.frise img {
+
+}
+
 main > div > form > label {
     color: var(--text);
     font-family: var(--font-sans-serif);
