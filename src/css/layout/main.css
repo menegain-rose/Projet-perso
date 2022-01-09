@@ -300,7 +300,8 @@ main li {
     background-color: var(--block);
     border-radius: 10px;
     padding: 5px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .propoarts img {
